@@ -2,33 +2,25 @@
 	import * as echarts from 'echarts';
 	import { onDestroy, onMount } from 'svelte';
 
+	// Create the echarts instance
 	let _class: string;
 	export { _class as class };
 
-    let title:string
+	export let title: string;
+	export let options: echarts.EChartsOption;
 
 	let chart: HTMLElement | null;
 	let resizeObserver: ResizeObserver;
 	let echart: echarts.ECharts | null;
 
 	onMount(() => {
+		console.log(options);
 		echart = echarts.init(chart);
 		echart.setOption({
 			title: {
 				text: title
 			},
-			tooltip: {},
-			xAxis: {
-				data: ['shirt', 'cardigan', 'chiffon', 'pants', 'heels', 'socks']
-			},
-			yAxis: {},
-			series: [
-				{
-					name: 'sales',
-					type: 'bar',
-					data: [5, 20, 36, 10, 10, 20]
-				}
-			]
+			...options
 		});
 		resizeObserver = new ResizeObserver(() => {
 			echart?.resize();
