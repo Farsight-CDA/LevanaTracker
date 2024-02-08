@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MinimalAPITemplate.Api.Services.Configuration;
+namespace LevanaTracker.Api.Services.Configuration;
 
 public class JwtBearerOptionsConfiguration : IConfigureNamedOptions<JwtBearerOptions>
 {

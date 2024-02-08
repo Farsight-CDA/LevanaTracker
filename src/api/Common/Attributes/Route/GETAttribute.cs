@@ -1,4 +1,4 @@
-﻿namespace MinimalAPITemplate.Api.Common.Attributes.Route;
+﻿namespace LevanaTracker.Api.Common.Attributes.Route;
 
 [AttributeUsage(AttributeTargets.Class)]
 public class GETAttribute : RouteAttribute

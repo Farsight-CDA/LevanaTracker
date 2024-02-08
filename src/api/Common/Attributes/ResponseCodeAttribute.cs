@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace MinimalAPITemplate.Api.Common.Attributes;
+namespace LevanaTracker.Api.Common.Attributes;
 
 [AttributeUsage(AttributeTargets.Class)]
 public class ResponseCodeAttribute : Attribute

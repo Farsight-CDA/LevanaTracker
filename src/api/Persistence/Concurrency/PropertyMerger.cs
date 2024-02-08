@@ -1,8 +1,8 @@
-﻿using MinimalAPITemplate.Api.Common.PropertyMerging;
+﻿using LevanaTracker.Api.Common.PropertyMerging;
 using System.Collections;
 using System.Reflection;
 
-namespace MinimalAPITemplate.Api.Persistence.Concurrency;
+namespace LevanaTracker.Api.Persistence.Concurrency;
 
 public sealed class PropertyMerger
 {

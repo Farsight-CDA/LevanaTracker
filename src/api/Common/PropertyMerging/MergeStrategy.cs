@@ -1,4 +1,4 @@
-﻿namespace MinimalAPITemplate.Api.Common.PropertyMerging;
+﻿namespace LevanaTracker.Api.Common.PropertyMerging;
 /// <summary>
 /// Strategies for merging conflicting property changes.
 /// </summary>

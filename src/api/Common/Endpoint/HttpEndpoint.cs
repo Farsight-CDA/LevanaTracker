@@ -2,13 +2,13 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MinimalAPITemplate.Api.Common.Attributes;
-using MinimalAPITemplate.Api.Common.Contracts;
-using MinimalAPITemplate.Api.Common.Exceptions;
+using LevanaTracker.Api.Common.Attributes;
+using LevanaTracker.Api.Common.Contracts;
+using LevanaTracker.Api.Common.Exceptions;
 using System.Reflection;
-using RouteAttribute = MinimalAPITemplate.Api.Common.Attributes.Route.RouteAttribute;
+using RouteAttribute = LevanaTracker.Api.Common.Attributes.Route.RouteAttribute;
 
-namespace MinimalAPITemplate.Api.Common.Endpoint;
+namespace LevanaTracker.Api.Common.Endpoint;
 
 [IgnoreServiceLevels]
 public abstract class HttpEndpoint<TSelf, TContract, TResponse> : Scoped, IHttpEndpoint<TContract>

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Diagnostics;
 
-namespace MinimalAPITemplate.Api.Persistence.Concurrency;
+namespace LevanaTracker.Api.Persistence.Concurrency;
 public abstract class MergingDbContext : DbContext
 {
     private static readonly Random _random = new Random();

@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using MinimalAPITemplate.Api.Models;
-using MinimalAPITemplate.Api.Models.Ids;
-using MinimalAPITemplate.Api.Persistence.Concurrency;
+using LevanaTracker.Api.Models;
+using LevanaTracker.Api.Models.Ids;
+using LevanaTracker.Api.Persistence.Concurrency;
 using System.Reflection;
 using System.Transactions;
 
-namespace MinimalAPITemplate.Api.Persistence;
+namespace LevanaTracker.Api.Persistence;
 
 public class AppDbContext : MergingDbContext
 {

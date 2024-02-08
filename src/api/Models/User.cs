@@ -1,6 +1,6 @@
-﻿using MinimalAPITemplate.Api.Models.Ids;
+﻿using LevanaTracker.Api.Models.Ids;
 
-namespace MinimalAPITemplate.Api.Models;
+namespace LevanaTracker.Api.Models;
 
 public class User
 {

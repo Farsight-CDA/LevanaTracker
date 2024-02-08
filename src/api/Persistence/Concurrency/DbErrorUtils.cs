@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Npgsql;
 
-namespace MinimalAPITemplate.Api.Persistence.Concurrency;
+namespace LevanaTracker.Api.Persistence.Concurrency;
 public static class DbErrorUtils
 {
     public static DbStatus ParseSaveChangesException(Exception ex, out string? constraintName)

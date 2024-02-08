@@ -1,7 +1,7 @@
 ﻿using Common.Configuration;
 using System.ComponentModel.DataAnnotations;
 
-namespace MinimalAPITemplate.Api.Configuration;
+namespace LevanaTracker.Api.Configuration;
 
 public class BindingOptions : Option
 {

@@ -1,6 +1,6 @@
 ﻿using StronglyTypedIds;
 
-namespace MinimalAPITemplate.Api.Models.Ids;
+namespace LevanaTracker.Api.Models.Ids;
 
 [StronglyTypedId]
 public readonly partial struct UserId

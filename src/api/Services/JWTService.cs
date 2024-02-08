@@ -1,12 +1,12 @@
 ﻿using Common.Services;
 using Microsoft.IdentityModel.Tokens;
-using MinimalAPITemplate.Api.Configuration;
-using MinimalAPITemplate.Api.Models.Ids;
+using LevanaTracker.Api.Configuration;
+using LevanaTracker.Api.Models.Ids;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace MinimalAPITemplate.Api.Services;
+namespace LevanaTracker.Api.Services;
 
 public class JWTService : Singleton
 {

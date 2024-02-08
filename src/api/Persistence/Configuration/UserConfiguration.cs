@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MinimalAPITemplate.Api.Models;
+using LevanaTracker.Api.Models;
 
-namespace MinimalAPITemplate.Api.Persistence.Configuration;
+namespace LevanaTracker.Api.Persistence.Configuration;
 
 public class UserConfiguration : IEntityTypeConfiguration<User>
 {

@@ -1,6 +1,6 @@
 ﻿using Common.Services;
 
-namespace MinimalAPITemplate.Api.Common.Attributes.Route;
+namespace LevanaTracker.Api.Common.Attributes.Route;
 
 public abstract class RouteAttribute : IgnoreServiceLevels
 {

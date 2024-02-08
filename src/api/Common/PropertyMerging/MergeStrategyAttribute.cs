@@ -1,4 +1,4 @@
-﻿namespace MinimalAPITemplate.Api.Common.PropertyMerging;
+﻿namespace LevanaTracker.Api.Common.PropertyMerging;
 /// <summary>
 /// A attribute for selecting the strategy to use when merging properties
 /// </summary>

@@ -1,4 +1,4 @@
-﻿namespace MinimalAPITemplate.Api.Common.Exceptions;
+﻿namespace LevanaTracker.Api.Common.Exceptions;
 
 public class DuplicateRouteAttributeException : Exception
 {

@@ -1,5 +1,5 @@
-﻿using MinimalAPITemplate.Api.Models.Ids;
+﻿using LevanaTracker.Api.Models.Ids;
 
-namespace MinimalAPITemplate.Api.Models.DTOs;
+namespace LevanaTracker.Api.Models.DTOs;
 
 public record UserDTO(UserId Id);

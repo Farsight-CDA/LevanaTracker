@@ -1,12 +1,12 @@
 using Common.Extensions;
 using Microsoft.EntityFrameworkCore;
-using MinimalAPITemplate.Api.Common.Endpoint;
-using MinimalAPITemplate.Api.Common.Extensions;
-using MinimalAPITemplate.Api.Configuration;
-using MinimalAPITemplate.Api.Persistence;
+using LevanaTracker.Api.Common.Endpoint;
+using LevanaTracker.Api.Common.Extensions;
+using LevanaTracker.Api.Configuration;
+using LevanaTracker.Api.Persistence;
 using System.Reflection;
 
-namespace MinimalAPITemplate.Api;
+namespace LevanaTracker.Api;
 
 public class Program
 {

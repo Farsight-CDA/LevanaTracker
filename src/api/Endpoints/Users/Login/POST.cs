@@ -1,15 +1,15 @@
 ﻿using Common.Services;
 using Microsoft.AspNetCore.Mvc;
-using MinimalAPITemplate.Api.Common.Attributes.Route;
-using MinimalAPITemplate.Api.Common.Contracts;
-using MinimalAPITemplate.Api.Common.Endpoint;
-using MinimalAPITemplate.Api.Models.DTOs;
-using MinimalAPITemplate.Api.Models.Ids;
-using MinimalAPITemplate.Api.Persistence;
-using MinimalAPITemplate.Api.Persistence.Concurrency;
-using MinimalAPITemplate.Api.Services;
+using LevanaTracker.Api.Common.Attributes.Route;
+using LevanaTracker.Api.Common.Contracts;
+using LevanaTracker.Api.Common.Endpoint;
+using LevanaTracker.Api.Models.DTOs;
+using LevanaTracker.Api.Models.Ids;
+using LevanaTracker.Api.Persistence;
+using LevanaTracker.Api.Persistence.Concurrency;
+using LevanaTracker.Api.Services;
 
-namespace MinimalAPITemplate.Api.Endpoints.Users.Login;
+namespace LevanaTracker.Api.Endpoints.Users.Login;
 
 file record Request([FromBody] RequestBody Body) : IRequestContract
 {

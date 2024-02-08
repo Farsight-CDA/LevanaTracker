@@ -1,4 +1,4 @@
-﻿namespace MinimalAPITemplate.Api.Persistence.Concurrency;
+﻿namespace LevanaTracker.Api.Persistence.Concurrency;
 
 public class DbSaveResult
 {

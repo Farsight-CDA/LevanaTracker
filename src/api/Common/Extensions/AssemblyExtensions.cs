@@ -1,7 +1,7 @@
-﻿using MinimalAPITemplate.Api.Common.Endpoint;
+﻿using LevanaTracker.Api.Common.Endpoint;
 using System.Reflection;
 
-namespace MinimalAPITemplate.Api.Common.Extensions;
+namespace LevanaTracker.Api.Common.Extensions;
 
 public static partial class Extensions
 {

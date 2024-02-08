@@ -1,4 +1,4 @@
-﻿namespace MinimalAPITemplate.Api.Common.Endpoint;
+﻿namespace LevanaTracker.Api.Common.Endpoint;
 
 public interface IRouteOwner
 {
