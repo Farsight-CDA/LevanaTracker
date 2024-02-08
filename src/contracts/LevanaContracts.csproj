@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>Cosm.Net.Contracts.Levana</Title>
+	<Authors>Playwo</Authors>
+	<Company></Company>
+	<PackageProjectUrl>https://github.com/PoolPirate/Cosm.Net</PackageProjectUrl>
+	<IncludeSymbols>True</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	  <Version>1.0.0</Version>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Cosm.Net.Generators.CosmWasm" Version="1.0.0" />
+	  <PackageReference Include="Cosm.Net" Version="1.0.0" />
+	  <PackageReference Include="System.Text.Json" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="schemas/market.json" />
+		<AdditionalFiles Include="schemas/factory.json" />
+	</ItemGroup>
+</Project>
