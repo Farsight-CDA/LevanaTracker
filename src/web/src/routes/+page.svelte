@@ -1,8 +1,9 @@
 <script lang="ts">
-	import * as echarts from 'echarts';
-	import { onMount } from 'svelte';
-	import Chart from '$lib/component/Chart.svelte';
+	import BarChart from '$lib/component/BarChart.svelte';
+
+	const x = ['shirt', 'cardigan', 'chiffon', 'pants', 'heels', 'socks'];
+
+	const y = [5, 20, 36, 10, 10, 20];
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<Chart class="h-52"></Chart>
+<BarChart class="h-52" xAxies={x} yAxies={y} title="a" />
