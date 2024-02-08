@@ -1,0 +1,14 @@
+﻿public partial struct PLACEHOLDERID
+{
+    public static bool TryParse(string s, out PLACEHOLDERID result)
+    {
+        if (!System.Guid.TryParse(s, out System.Guid r))
+        {
+            result = default;
+            return false;
+        }
+
+        result = new PLACEHOLDERID(r);
+        return true;
+    }
+}
