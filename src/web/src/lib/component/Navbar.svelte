@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import {page} from "$app/stores";
 
-	let navbarOpen = true;
+	let navbarOpen = false;
 	let button: HTMLElement;
 
 	function handleMenuOpen() {
