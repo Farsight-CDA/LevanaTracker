@@ -1,15 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import {page} from "$app/stores";
 
-	let navbarOpen = false;
+	let navbarOpen = true;
 	let button: HTMLElement;
 
 	function handleMenuOpen() {
-		if (navbarOpen == true) {
-			navbarOpen = false;
-		} else {
-			navbarOpen = true;
-		}
+		navbarOpen = navbarOpen != true;
 	}
 	function handleMenuClose() {
 		navbarOpen = false;
@@ -22,12 +19,19 @@
 		handleMenuClose();
 	}
 
+	let currentPage = $page.url.pathname.split('/')[1]
+	$: {
+		currentPage = $page.url.pathname.split('/')[1];
+	}
+
 	onMount(() => {
 		document.addEventListener('click', handleClickOutsideNavbar);
 	});
+
+
 </script>
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+<nav class="bg-gray-900">
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 		<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
 			>LevanaTracker</span
@@ -60,25 +64,33 @@
 			</svg>
 		</button>
 		<div
-			class="{navbarOpen == false
+			class="{navbarOpen === false
 				? 'hidden'
-				: ''} md:top-auto top-16 md:right-5 right-2 z-10 md:absolute w-1/2 md:block md:w-auto"
+				: ''} md:top-auto top-16 md:right-5 right-2 z-10 md:relative absolute w-1/3 md:block md:w-auto"
 		>
 			<ul
 				class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
 			>
 				<li>
 					<a
-						href="home"
-						class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-						aria-current="page">Home</a
+							href="/home"
+							class="
+						{currentPage === 'home'
+							? 'block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+							: 'block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'}
+						"
+					>Home</a
 					>
 				</li>
 				<li>
 					<a
-						href="about"
-						class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-						>About</a
+						href="/about"
+						class="
+						{currentPage === 'about'
+							? 'block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+							: 'block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'}
+						"
+					>About</a
 					>
 				</li>
 			</ul>
